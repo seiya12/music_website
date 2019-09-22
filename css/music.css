@@ -1,0 +1,75 @@
+
+/*--------ロゴ--------*/
+.logo {
+  -ms-filter: blur(15px);
+  filter: blur(15px);
+}
+/*--------コンテンツ--------*/
+#contents {
+  width: 1000px;
+  height: 250px;
+  position: relative;
+  top: 100px;
+  left: 250px;
+  z-index: 200;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: white;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 10px;
+}
+#contents h2{
+/*  width: 200px;*/
+  height: 200px;
+  margin-top: 25px;
+  margin-left: 50px;
+  box-shadow: 2px 2px 6px 2px rgba(0,0,0,0.4);
+  float: left;
+}
+#contents img{
+  height: 200px;
+/*  border: solid gray 1px;*/
+}
+#contents table{
+  width: 300px;
+  float: left;
+}
+#contents th{
+  height: 50px;
+  font-size: 0.8em;
+}
+.music_title{
+  margin-top: 50px;
+  margin-left: 30px;
+}
+.music_title a{
+  color: black;
+}
+.music_title a:hover{
+  text-decoration: underline;
+}
+.music_details {
+  margin-top: 50px;
+  margin-left: 30px; 
+}
+.buy {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  line-height: 30px;
+  width: 80px;
+  border: solid #962DB4 1px;
+  text-align: center;
+  border-radius: 8px;
+}
+.buy a{
+  display: block;
+  width: 80px;
+  height: 30px;
+  color: #962DB4;
+}
+.buy a:hover{
+  color: white;
+  background-color: #962DB4;
+  border-radius: 8px;
+}

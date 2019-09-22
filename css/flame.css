@@ -1,0 +1,472 @@
+/* 全て */
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type:  none;
+  text-decoration: none;
+/*  color: black;*/
+/*  -moz-box-sizing: border-box;*/
+/*    box-sizing: border-box;*/
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* 入力フォーム */
+input,
+button,
+select{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+}
+
+p,
+li,
+a,
+h2,
+td
+button{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+/*----------ロゴ----------*/
+.logo {
+  background-color: rgba(0,0,0,0.8);
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* テキスト */
+.logo p{
+  width: 200px;
+  height: 60px;
+  background-color: white;
+  float: left;
+}
+
+/* リスト */
+.serch form{
+  line-height: 60px;
+  height: 60px;
+  display: flex;
+  float: left;
+}
+
+/* 入力フォーム */
+.serch input{
+  width: 500px;
+  height: 25px;
+  margin-left: 50px;
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.serch button{
+  width: 60px;
+  line-height: 25px;
+  height: 25px;
+  background-color: #962DB4;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.serch {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  z-index: 100;
+}
+
+
+/*----------ナビ----------*/
+#nav {
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 300;
+}
+#nav img{
+  width: 200px;
+  height: 60px;
+}
+#nav p{
+/*  position: absolute;*/
+/*  z-index: 700;*/
+}
+
+/* リスト */
+#nav ul{
+  margin-top: 80px;
+  width: 200px;
+}
+#nav li{
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.0em;
+}
+
+/* リンク */
+#nav a{
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  display: block;
+  width: 200px;
+  line-height: 40px;
+  font-family: 'Sawarabi Gothic', sans-serif;
+}
+#nav a:hover{
+  background-color: white;
+  color: purple;
+}
+
+/*----------ナビ２---------*/
+#nav_2{
+  margin-top: 60px;
+  width: 1350px;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 400;
+  background-color: white;
+  border-radius: 10px;
+  border: solid #962DB4 4px;
+}
+
+/* テキスト */
+#nav_2 p{
+  width: 200px;
+  height: 100%;
+  line-height: 100%;
+  float: left;
+  background-color: #962DB4;
+}
+
+/* リスト */
+.flex{
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+}
+
+.flex li{
+  height: 35px;
+  width: 150px;
+}
+#nav_2 a:nth-of-type(2){
+  border-left: solid black 1px;
+}
+
+
+/* リンク */
+.flex a{
+  text-align: center;
+  display: block;
+  line-height: 50px;
+  height: 50px;
+  width: 150px;
+  color: black;
+  font-family: 'Sawarabi Gothic', sans-serif;
+
+}
+.flex a:hover{
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+}
+
+/* カテゴリ */
+.category {
+  position: relative;
+  left: 250px;
+  width: 200px;
+  border-radius: 10px;
+  border: solid gray 1px;
+  box-shadow: 2px 2px 6px 2px rgba(0,0,0,1);
+}
+.category li{
+  background-color: white;
+  width: 200px;
+  height: 40px;
+}
+.category li:nth-child(1){
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.category li:nth-child(5){
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.category a{
+  color: black;
+  display: block;
+  text-align: center;
+  width: 200px;
+  line-height: 40px;
+}
+.category a:hover{
+  background-color: gainsboro;
+  color: black;
+  border-radius: 5px;
+}
+/*
+.category a:hover:nth-of-type(1){
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.category a:hover:nth-of-type(5){
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+*/
+
+/* 入力フォーム */
+#nav_2 select{
+  color: white;
+}
+
+/*-----------ログイン-----------*/
+#login {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+}
+#login form{
+  position: fixed;
+  width: 400px;
+  height: 500px;
+  z-index: 500;
+  top: 110px;
+  left: 50%;
+  -ms-transform: translate(-50%);
+  -webkit-transform : translate(-50%);
+  transform : translate(-50%); 
+  background-color: white;
+  border: solid gray 1px;
+  color: black;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 50px;
+/*  display: none;*/
+}
+#login input{
+  height: 20px;
+  border: solid gray 1px;
+}
+#login table{
+  width: 400px;
+/*  background-color: orange;*/
+}
+#login th{
+  font-weight: 100;
+  font-size: 1.2em;
+}
+.l_logo {
+  line-height: 200px;
+}
+.l_logo img{
+  width: 200px;
+  height: 60px;
+  background-color: black;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 25px;
+}
+.l_logo th{
+}
+.btn {
+  height: 200px;
+/*  background-color: aqua;*/
+}
+.btn a{
+  font-size: 0.9em;
+  color: black;
+}
+.btn a:hover{
+  text-decoration: underline
+}
+.btn td{
+  text-align: center;
+  width: 200px;
+}
+.btn button:hover{
+  text-decoration: underline;
+}
+.a {
+  padding: 10px;
+}
+
+/*----------登録画面----------*/
+#signup {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+}
+#signup form{
+  width: 400px;
+  height: 500px;
+  position: fixed;
+  top: 110px;
+  left: 50%;
+  z-index: 500;
+  -ms-transform: translate(-50%);
+  -webkit-transform : translate(-50%);
+  transform : translate(-50%);
+  background-color: white;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 50px;
+  display: flex;
+}
+#signup input{
+  border-bottom: solid gray 1px;
+}
+#signup table{
+  padding-top: 60px;
+  margin: 0 auto;
+}
+#signup th{
+  font-size: 0.8em;
+  font-weight: 100;
+  padding: 10px;
+}
+.sign_btn {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  background-color: #962DB4;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 50px;
+}
+.sign_btn a:hover{
+  text-decoration: underline;
+}
+.sign_btn button:hover{
+  text-decoration: underline;
+}
+.sign_btn li{
+  font-size: 0.8em;
+  width: 200px;
+  text-align: center;
+}
+.sign_btn a{
+  display: block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  font-size: 0.8em;
+}
+.sign_btn button{
+  display: block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 0.8em;
+  color: white;
+}
+.sign_logo {
+  position: absolute;
+  top: 15px;
+  height: 50px;
+  line-height: 50px;
+  width: 400px;
+  text-align: center;
+}
+.sign_logo img{
+  width: 130px;
+  background-color: black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 15px;
+}
+.err {
+  text-align: center;
+  font-size: 0.6em;
+  color: red;
+}
+.title {
+  font-size: 0.8em;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  text-decoration: underline;
+/*  background-color: orange;*/
+}
+
+/*---------ログアウト--------*/
+.logout {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top:0;
+/*  z-index: 499;*/
+  background-color: rgba(0,0,0,0.7);
+}
+.logout_flame {
+  width: 300px;
+  height: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+/*  z-index: 500;*/
+  border-top-left-radius: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 50px;
+  background-color: white;
+}
+.logout_text {
+  margin-top: 125px;
+  height: 150px;
+  width: 300px;
+  background-color: #962DB4;
+}
+
+.logout_text h2,
+.logout_text ul{
+  text-align: center;
+}
+.logout h2{
+  line-height: 80px;
+  font-size: 1.1em;
+  font-weight: 100;
+  color: darkorange;
+}
+.logout_text ul{
+  display: flex;
+  justify-content: space-around;
+}
+.logout_text li{
+  width: 150px;
+  line-height: 50px;
+}
+.logout_text a{
+  color: white;
+}
+.logout_text a:hover{
+  text-decoration: underline;
+}

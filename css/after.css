@@ -1,0 +1,161 @@
+body {
+  background-image: url(../img/bg_img8.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*--------コンテンツ--------*/
+#contents {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* テキスト */
+#contents h2:nth-of-type(1){
+  padding-top: 120px;
+}
+
+#contents h2{
+  padding-bottom: 40px;
+  font-size: 2.0em;
+  margin-left: 250px;
+  font-weight: 100;
+  color: white;
+}
+
+/*--コンテント--*/
+.content {
+  margin-bottom: 80px;
+  margin-left: 220px;
+  display: flex;
+}
+
+/*--ボックス--*/
+.box {
+  margin-left: 20px;
+  width: 150px;
+  height: 210px;
+  border: solid black 1px;
+  box-shadow: 2px 2px 6px 2px rgba(0,0,0,0.8);
+  border-radius: 10px;
+/*  margin: 20px;*/
+}
+
+/* リスト */
+.box ul{
+/*  margin-top: 130px;*/
+  height: 80px;
+  width: 150px;
+  position: relative;
+  z-index: 202;
+  top: -80px;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.box li{
+  padding-left: 7px;
+}
+.box li:nth-child(1){
+  padding-top: 7px;
+}
+
+/* リンク */
+.hover a{
+  display: block;
+  height: 210px;
+  width: 150px;
+}
+.juket img{
+  width: 150px;
+  border-radius: 10px;
+/*  height: 210px;*/
+}
+
+.art a{
+  display: block;
+  width: 150px;
+  color: black;
+  font-size: 0.8em;
+}
+.art a:hover{
+  text-decoration: underline;
+}
+
+.juket {
+  height: 210px;
+  width: 150px;
+}
+
+.hover {
+  width: 150px;
+  height: 210px;
+/*  background-color: white;*/
+  position: relative;
+  top: -290px;
+  z-index: 201;
+}
+.hover :hover{
+  background-color:rgba(0,0,0,0.4);
+  border-radius: 10px;
+}
+
+/*--広告--*/
+.navBox{
+  position: relative;
+  top: 60px;
+  left: 250px;
+  height: 250px;
+  width: 1000px;
+  box-shadow: 2px 2px 6px 2px rgba(0,0,0,1);
+  border-top-left-radius: 100px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 100px;
+  background: linear-gradient(450deg,rgba(0,0,0,1),rgba(255,255,255,0.8));
+}
+.navBox img{
+  position: absolute;
+  right: 0;
+  height: 250px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 100px;
+  opacity: 0.5;
+}
+.navBox li{
+  color: white;
+}
+.navBox li:nth-child(1){
+  padding-top: 65px;
+  font-size: 3.0em;
+  font-family: 'Dancing Script', cursive;
+}
+.navBox li:nth-child(2){
+  padding-top: 15px;
+  font-size: 1.5em;
+  font-family: 'Sawarabi Gothic', sans-serif;
+}
+.navBox ul{
+  margin-left: 80px;
+}
+.navBox span{
+  font-size: 1.6em;
+/*  color: #962DB4;*/
+}
+
+/*--もっと見る--*/
+.more {
+  line-height: 200px;
+}
+.more a{
+  margin-left: 50px;
+  font-size: 2.0em;
+  color: white;
+}
+

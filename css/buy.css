@@ -1,0 +1,100 @@
+body {
+  background-image: url(../img/bg_img.png);
+}
+
+/* 全て */
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type:  none;
+  text-decoration: none;
+/*  color: black;*/
+/*  -moz-box-sizing: border-box;*/
+/*    box-sizing: border-box;*/
+}
+html {
+    scroll-behavior: smooth;
+}
+
+#back {
+  background-color: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100vh;
+}
+#contents {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100vh;
+  width: 400px;
+  height: 500px;
+  background-color: white;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 50px;
+/*  font-size: 0.8em;*/
+}
+#contents h2{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+#contents img{
+  width: 200px;
+}
+.title {
+  text-align: center;
+}
+.title li:nth-child(1){
+  font-size: 1.2em;
+}
+.title a{
+  color: black;
+  font-size: 0.9em;
+}
+.value,
+.point,
+.after {
+  display: flex;
+  justify-content: space-between;
+}
+.value li,
+.point li,
+.after li {
+  width: 150px;
+  text-align: center;
+}
+.point {
+  margin-top: 20px;
+}
+.value {
+  border-bottom: solid 1px black;
+}
+.value li{
+  height: 50px;
+  line-height: 50px;
+}
+.value li:nth-child(2){
+  font-size: 1.5em;
+  color: orangered;
+}
+.after {
+  margin-top: 10px;
+}
+.category {
+  height: 50px;
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-around;
+}
+.category a{
+  color: #962DB4;
+  font-size: 0.9em;
+}
+.category a:hover{
+  text-decoration: underline;
+}
